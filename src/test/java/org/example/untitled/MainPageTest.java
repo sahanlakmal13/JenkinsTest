@@ -56,7 +56,7 @@ public class MainPageTest {
         open("https://twitter.com/i/flow/login");
 
         //page.userNameInput();
-        //Thread.sleep(60000);
+        Thread.sleep(60000);
         //page.passwordInput();
         //Thread.sleep(60000);
         //page.tweet();
