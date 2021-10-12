@@ -1,11 +1,11 @@
 node{
-    stage 'Checkout'{
+    stage 'Checkout'
         git url: 'https://github.com/sahanlakmal13/JenkinsTest.git'
-    }
-    stage 'build'{
+
+    stage 'build'
         docker.build('selenoid-ui')
-    }
-    stage 'deploy'{
+
+    stage 'deploy'
         sh './deploy.sh'
-    }
+
 }
