@@ -5,4 +5,7 @@ node{
     stage 'deploy'
         sh "chmod +x -R ${env.WORKSPACE}"
         sh './deploy.sh'
+
+    stage 'test'
+            sh './gradlew clean build'
 }
