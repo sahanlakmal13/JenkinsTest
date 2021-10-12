@@ -15,9 +15,20 @@ services:
     network_mode: bridge
     links:
       - selenoid
+      - socat
     ports:
       - "8080:8080"
     command: ["--selenoid-uri", "http://selenoid:4444"]
+    environment:
+      - DOCKER_HOST=tcp://socat:2375
+  - socat:
+      image: bpack/socat
+      command: TCP4-LISTEN:2375,fork,reuseaddr UNIX-
+        <cont on prev line>CONNECT:/var/run/docker.sock
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
+      expose:
+        - "2375"
 
 
 
