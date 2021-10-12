@@ -1,5 +1,8 @@
 FROM scratch
 
+USER root
+RUN groupadd docker
+
 COPY selenoid-ui /
 COPY health-check /
 COPY licenses /
