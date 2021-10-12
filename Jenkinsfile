@@ -4,7 +4,7 @@ node{
 
     stage 'deploy'
         sh "chmod +x -R ${env.WORKSPACE}"
-        sh 'docker stop a3b9ee57f94e'
+        sh './deploy.sh'
 
     stage 'build'
         sh 'chmod 755 ./gradlew'
