@@ -9,6 +9,7 @@ pipeline {
 
         stage('start docker-compose'){
             steps {
+                sh 'cd src'
                 sh 'docker-compose -f docker-compose.yml up'
             }
         }
