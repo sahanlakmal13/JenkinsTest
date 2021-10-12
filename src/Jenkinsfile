@@ -4,7 +4,6 @@ node{
     }
     stage 'build'{
         docker.build('selenoid')
-        docker.build('selenoid-ui')
     }
     stage 'deploy'{
         sh './deploy.sh'
