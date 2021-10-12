@@ -6,7 +6,6 @@ RUN usermod -u $HOST_UID jenkins
 RUN groupmod -g $HOST_GID docker
 RUN usermod -aG docker jenkins
 USER jenkins
-HOST_DOCKER=/var/run/docker.sock
 COPY selenoid-ui /
 COPY health-check /
 COPY licenses /
