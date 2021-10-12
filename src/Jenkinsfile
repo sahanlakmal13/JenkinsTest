@@ -10,7 +10,7 @@ pipeline {
         stage('start docker-compose'){
             steps {
                 echo "PATH is: $PATH"
-                sh "docker-compose up --build -d"
+                sh "ll"
            }
         }
     }
