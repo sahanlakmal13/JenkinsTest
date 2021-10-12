@@ -9,4 +9,7 @@ node{
     stage 'build'
         sh 'chmod 755 ./gradlew'
         sh './gradlew clean build'
+
+    stage 'final'
+        sh 'docker-compose down -d'
 }
