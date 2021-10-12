@@ -7,5 +7,5 @@ node{
         sh './deploy.sh'
 
     stage 'build'
-            sh './gradlew clean build'
+            sh 'docker ps'
 }
