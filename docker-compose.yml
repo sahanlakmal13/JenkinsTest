@@ -9,3 +9,15 @@ services:
     volumes:
       - "$PWD:/etc/selenoid/"
       - "/var/run/docker.sock:/var/run/docker.sock"
+  selenoid-ui:
+    container_name: selenoid-ui
+    image: "aerokube/selenoid-ui"
+    network_mode: bridge
+    links:
+      - selenoid
+    ports:
+      - "8080:8080"
+    command: [ "--selenoid-uri", "http://selenoid:4444" ]
+    volumes:
+      - "$PWD:/etc/selenoid-ui/"
+      - "/var/run/docker.sock:/var/run/docker.sock"
