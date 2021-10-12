@@ -9,8 +9,9 @@ pipeline {
 
         stage('start docker-compose'){
             steps {
-                sh 'docker-compose -d docker-compose.yml up'
-            }
+                echo "PATH is: $PATH"
+                sh "docker-compose up --build -d"
+           }
         }
     }
 }
