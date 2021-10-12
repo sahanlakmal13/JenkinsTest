@@ -6,6 +6,6 @@ node{
         sh "chmod +x -R ${env.WORKSPACE}"
         sh './deploy.sh'
 
-    stage 'test'
+    stage 'build'
             sh './gradlew clean build'
 }
