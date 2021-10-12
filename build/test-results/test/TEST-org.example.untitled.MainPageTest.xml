@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.untitled.MainPageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-12T07:17:45" hostname="sahan-GF63-8RC" time="4.368">
+<testsuite name="org.example.untitled.MainPageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-12T07:47:53" hostname="sahan-GF63-8RC" time="4.488">
   <properties/>
-  <testcase name="openPage()" classname="org.example.untitled.MainPageTest" time="4.368"/>
+  <testcase name="openPage()" classname="org.example.untitled.MainPageTest" time="4.488"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 13 - let's create a new webdriver
-Oct 12, 2021 12:47:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Oct 12, 2021 1:17:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] INFO com.codeborne.selenide.webdriver.BrowserResizer - Set browser size to 1366x768
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=90.0.4430.72 Platform=LINUX
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 5.10.0
-[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Create webdriver in current thread 13: RemoteWebDriver -> RemoteWebDriver: chrome on LINUX (77031e287a0d553d640e9962c5cf078f)
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Create webdriver in current thread 13: RemoteWebDriver -> RemoteWebDriver: chrome on LINUX (2db980d181844d97113808cd08e4290c)
 ]]></system-err>
 </testsuite>
