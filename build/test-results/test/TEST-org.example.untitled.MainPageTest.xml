@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.untitled.MainPageTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-10-12T10:16:50" hostname="sahan-GF63-8RC" time="0.68">
+<testsuite name="org.example.untitled.MainPageTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-10-12T10:51:51" hostname="sahan-GF63-8RC" time="0.767">
   <properties/>
-  <testcase name="openPage()" classname="org.example.untitled.MainPageTest" time="0.68">
-    <failure message="org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'sahan-GF63-8RC', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-84-generic', java.version: '11.0.11'&#10;selenide.remote: http://localhost:4444/wd/hub&#10;Driver info: driver.version: SelenideDriver&#10;selenide.url: https://twitter.com/i/flow/login&#10;selenide.baseUrl: http://localhost:8080" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+  <testcase name="openPage()" classname="org.example.untitled.MainPageTest" time="0.767">
+    <failure message="org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'sahan-GF63-8RC', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-84-generic', java.version: '11.0.12'&#10;selenide.remote: http://localhost:4444/wd/hub&#10;Driver info: driver.version: SelenideDriver&#10;selenide.url: https://twitter.com/i/flow/login&#10;selenide.baseUrl: http://localhost:8080" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'sahan-GF63-8RC', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-84-generic', java.version: '11.0.11'
+System info: host: 'sahan-GF63-8RC', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-84-generic', java.version: '11.0.12'
 selenide.remote: http://localhost:4444/wd/hub
 Driver info: driver.version: SelenideDriver
 selenide.url: https://twitter.com/i/flow/login
