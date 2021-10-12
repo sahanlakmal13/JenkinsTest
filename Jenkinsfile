@@ -3,7 +3,7 @@ node{
         git url: 'https://github.com/sahanlakmal13/JenkinsTest.git'
 
     stage 'build'
-        docker.build('selenoid')
+        docker.deploy('selenoid')
 
     stage 'deploy'
         sh './deploy.sh'
