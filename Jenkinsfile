@@ -9,7 +9,4 @@ node{
     stage 'build'
         sh 'chmod 755 ./gradlew'
         sh './gradlew clean build'
-
-    stage 'test'
-        sh 'docker ps'
 }
