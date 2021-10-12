@@ -1,10 +1,16 @@
-node{
+pipeline {
+    agent any
+    stages {
+        stage('Clone repository') {
+            steps {
+                checkout scm
+            }
+        }
 
-    stage('Clone repository'){
-        checkout scm
-    }
-
-    stage('start docker-compose'){
-        sh 'docker-compose up -d --scale chrome=1 firefox=1 edge=1'
+        stage('start docker-compose'){
+            steps {
+                sh 'docker-compose -f docker-compose.yml up'
+            }
+        }
     }
 }
