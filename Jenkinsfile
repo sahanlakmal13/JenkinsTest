@@ -4,7 +4,7 @@ node{
 
     stage 'deploy'
         sh "chmod +x -R ${env.WORKSPACE}"
-        sh 'service docker start'
+        sh 'docker build'
         sh './deploy.sh'
 
     stage 'build'
