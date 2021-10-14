@@ -20,10 +20,9 @@ public class MainPageTest {
     WebDriver driver;
     private OpenTwitterPage page = new OpenTwitterPage();
 
-    @Parameters({"browser"})
     @BeforeAll
     static void setUp(){
-        Configuration.remote = "http://localhost:4444/wd/hub";
+        //Configuration.remote = "http://localhost:4444/wd/hub";
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
         Configuration.browserCapabilities = capabilities;
@@ -51,7 +50,7 @@ public class MainPageTest {
     }
 
     @Test
-    public void openPage() throws InterruptedException {
+    public void openPage() {
 
         open("https://twitter.com/i/flow/login");
 
