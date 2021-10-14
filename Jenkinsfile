@@ -4,6 +4,7 @@ node{
 
     stage 'build'
         sh 'chmod 755 ./gradlew'
-        sh './gradlew clean build'
-
+        withGradle(){
+            sh './gradlew clean build'
+        }
 }
