@@ -4,11 +4,12 @@ pipeline {
         stage('Build') {
             steps {
                 git 'https://github.com/sahanlakmal13/JenkinsTest.git'
+                sh 'docker-compose down'
+                sh 'docker-compose up -d'
             }
         }
         stage('Test') {
             steps {
-                sh 'chmod 755 ./gradlew'
                 withGradle(){
                     sh './gradlew clean test'
                 }
