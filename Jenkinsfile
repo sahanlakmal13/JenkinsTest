@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh 'chmod 755 ./gradlew'
                 withGradle(){
-                    sh './gradlew clean build'
+                    sh './gradlew clean test'
                 }
             }
         }
